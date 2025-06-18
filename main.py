@@ -7,7 +7,7 @@ from PIL import Image
 import io
 
 app = FastAPI()
-model = YOLO("yolov8n.pt")  # Upload this to Render
+model = YOLO("yolov8s.pt")  # Upload this to Render
 
 @app.post("/detect")
 async def detect(file: UploadFile = File(...)):
